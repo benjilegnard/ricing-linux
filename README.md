@@ -1,5 +1,5 @@
 # "Ricing Linux" : Comment une palette de couleur a changé ma manière d'utiliser un ordinateur.
-<img src="./assets/ricing-linux-header.jpeg"/>
+<img src="./public/assets/ricing-linux-header.jpeg"/>
 
 ## Abstract
 

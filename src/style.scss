@@ -1,0 +1,41 @@
+@use "sass:color";
+@use "@catppuccin/palette/scss/mocha" as *;
+@use "../node_modules/reveal.js/css/theme/template/mixins" as mixins;
+
+// Inject theme variables (see reveal.js/css/theme/template/settings.scss)
+@use "../node_modules/reveal.js/css/theme/template/settings" with ($background-color: $crust,
+
+  $main-color: $subtext1,
+  $heading-color: $text,
+
+  $main-font-size: 32px,
+  $main-font: ("Arial", Helvetica, sans-serif),
+  $heading-font: ("Poppins", Helvetica, sans-serif),
+  $heading-text-shadow: none,
+  $heading-letter-spacing: normal,
+  $heading-text-transform: normal,
+  $heading-font-weight: 600,
+  $link-color: $sky,
+  $link-color-hover: color.adjust($sky, $lightness: 15%),
+  $selection-background-color: color.adjust($sky, $lightness: 25%),
+
+  $heading1-size: 2.3em,
+  $heading2-size: 1.4em,
+  $heading3-size: 1.1em,
+  $heading4-size: 0.8em);
+
+// Theme template ------------------------------
+@use "../node_modules/reveal.js/css/theme/template/theme";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@import url("https://fonts.bunny.net/css2?family=Poppins:wght@300,700&family=Source+Sans+Pro&display=swap");
+
+// Change text colors against light slide backgrounds
+@include mixins.light-bg-text-color($base);
+
+iframe {
+  border: none;
+}
+
+@import "@catppuccin/highlightjs/sass/catppuccin-mocha.scss";

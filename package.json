@@ -1,0 +1,33 @@
+{
+  "name": "ricing-linux",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc & vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "reveal.js": "^6.0.2"
+  },
+  "devDependencies": {
+    "@catppuccin/highlightjs": "^1.0.1",
+    "@catppuccin/palette": "^1.8.0",
+    "sass": "^1.105.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.1"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.24.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@11.24.0"
+}
