@@ -3,14 +3,14 @@
 @use "../node_modules/reveal.js/css/theme/template/mixins" as mixins;
 
 // Inject theme variables (see reveal.js/css/theme/template/settings.scss)
-@use "../node_modules/reveal.js/css/theme/template/settings" with ($background-color: $crust,
+@use "../node_modules/reveal.js/css/theme/template/settings" with ($background-color: $base,
 
   $main-color: $subtext1,
   $heading-color: $text,
 
   $main-font-size: 32px,
-  $main-font: ("Arial", Helvetica, sans-serif),
-  $heading-font: ("Poppins", Helvetica, sans-serif),
+  $main-font: "Arial, Helvetica, sans-serif",
+  $heading-font: "Poppins, Helvetica, sans-serif",
   $heading-text-shadow: none,
   $heading-letter-spacing: normal,
   $heading-text-transform: normal,

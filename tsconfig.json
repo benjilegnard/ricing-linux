@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    // Vite bundles the code, tsc only type checks
+    "noEmit": true,
+
+    // "bundler" resolution is required by reveal.js types
+    // (with "nodenext", RevealConfig becomes `any`)
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "target": "es2022",
+    "lib": ["es2022", "dom", "dom.iterable"],
+    // Vite client types: css/scss/asset imports, import.meta.env
+    "types": ["vite/client"],
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Recommended Options
+    "strict": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true
+  },
+  "include": ["src"]
+}
