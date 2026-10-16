@@ -1,5 +1,11 @@
 # "Ricing Linux" : Comment une palette de couleur a changé ma manière d'utiliser un ordinateur.
-<img src="./public/assets/ricing-linux-header.jpeg"/>
+<div align="center">
+    <img 
+        src="./public/assets/ricing-linux-header.jpeg"
+        alt="dessin représentant un barbu devant un écran d'ordinateur, au dessus de sa tête, des bulles de couleurs"
+        style="width: 125px;"
+    />
+</div>
 
 ## Abstract
 
